@@ -1,0 +1,60 @@
+<!doctype html>
+    <html lang="es">
+        <head>
+            <title>Formulario de registro - Mi web</title>
+            <meta charset="utf-8">
+            <link href="index.css" rel="stylesheet">
+        </head>
+
+        <body>
+            <form action ="index.html">
+                <h1>Formulario de registro</h1>
+                    <div id="personal-data">
+                        <fieldset><legend>Datos personales</legend>
+                            <div id="name-surname">
+                                <div id="name">
+                                    <input type="text" placeholder="Nombre" name="datos-personales" maxlength="50" required>
+                                </div>
+                                <div id="surname">
+                                    <input type="text" placeholder="Apellidos" maxlength="50" required name="datos-personales">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div id="sex-data">
+                        <fieldset><legend>Sexo</legend>
+                            <div id="woman-man">
+                                <label><input type="radio" value="mujer" name="datos-personales" required> Mujer</label>
+                                <label><input type="radio" value="hombre" name="datos-personales" required> Hombre</label>
+                            </div>    
+                        </fieldset>
+                    </div>
+
+                    <div id="contact-data">
+                        <fieldset><legend>Contacto</legend>
+                            <div id="email-phone">
+                                <div id="email">
+                                    <input type="text" required placeholder="Correo electrónico" name="datos-personales">
+                                </div>
+                                <div id="phone">
+                                    <input type="text" required placeholder="Teléfono" name="datos-personales">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div id="checkbox-data">
+                        <label><input id="first-checkbox" type="checkbox" value="ofertas" checked>Deseo recibir información sobre novedades y ofertas</label><br>
+                        <label><input type="checkbox" value="condiciones" required>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                    </div>
+
+                    <button>Enviar</button>
+
+                    <footer>
+                        <p>© Todos los derechos reservados</p>
+                    </footer>
+            </form>
+        </body>
+    </html>
+</doctype>
